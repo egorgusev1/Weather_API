@@ -26,6 +26,8 @@ pip install \
   setuptools==78.1.0 \
   urllib3==2.3.0 \
   Werkzeug==3.1.3 \
-  zope.interface==7.2
+  zope.interface==7.2\
+  pytest\
+  requests-mock
 
 echo "All packages installed successfully."

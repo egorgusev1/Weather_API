@@ -7,10 +7,10 @@
 </picture>
 
 
-[Click Here for live demo](https://weather-app-nine-sigma-76.vercel.app/)
+[Click Here for live demo!!!](https://weather-app-nine-sigma-76.vercel.app/)
 
 ### Clone this repo with this link<br/>
-(https://github.com/egorgusev1/Weather_API.git)
+`https://github.com/egorgusev1/Weather_API.git`
 
 ### Make sure you are in a working directory<br/>
 `cd Weather_App`

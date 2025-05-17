@@ -13,14 +13,14 @@
 ### Make sure you are in a working directory<br/>
 `cd Weather_App`
 
-### run the install_requirements.sh, that will install all the dependencies neeeded for this project<br/>
+### Run the install_requirements.sh, that will install all the dependencies neeeded for this project<br/>
 `./install_requirements.sh`
 
-### to run the project, open the weather_app, and type<br/>
+### To run the project, open the weather_app, and type<br/>
 `cd weather_app`
 `python3 main.py`
 
-### to run the tests, type<br/>
+### To run the tests, type<br/>
 `pytest`
 
 https://weather-app-nine-sigma-76.vercel.app/

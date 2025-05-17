@@ -19,7 +19,7 @@
 `./install_requirements.sh`
 
 ### Create a file .env. This is where you will put your API key, inside of it put
-`API_KEY = "Your API key"`
+`API_KEY = "Your API key"`<br/>
 `IPINFO_TOKEN = "Your IP info token"`
 
 

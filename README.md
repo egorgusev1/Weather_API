@@ -24,7 +24,7 @@
 
 
 ### To run the project, open the weather_app, and type<br/>
-`cd weather_app`
+`cd weather_app`<br/>
 `python3 main.py`
 
 ### To run the tests, type<br/>

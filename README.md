@@ -19,8 +19,8 @@
 `./install_requirements.sh`
 
 ### Create a file .env. This is where you will put your API key, inside of it put
-API_KEY = "Your API key"
-IPINFO_TOKEN = "Your IP info token"
+`API_KEY = "Your API key"`
+`IPINFO_TOKEN = "Your IP info token"`
 
 
 ### To run the project, open the weather_app, and type<br/>

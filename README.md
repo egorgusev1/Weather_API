@@ -1,4 +1,4 @@
-# Try our weather application live
+# Weather App
 
 <picture>
  <source media="(prefers-color-scheme: dark)" srcset="/images/weather_app.png">
@@ -7,33 +7,130 @@
 </picture>
 
 
-[Click Here for live demo!!!](https://weather-app-nine-sigma-76.vercel.app/)
+## [Live Demo](https://weather-app-nine-sigma-76.vercel.app/)
 
-### Clone this repo with this link<br/>
-`https://github.com/egorgusev1/Weather_API.git`
+A modern weather application that automatically detects user location and provides real-time weather updates and forecasts.
 
-### Make sure you are in a working directory<br/>
-`cd Weather_App`
+## Features
 
-### Run the install_requirements.sh, that will install all the dependencies neeeded for this project<br/>
-`./install_requirements.sh`
+- **Automatic Location Detection**: Identifies your city from your IP address
+- **Current Weather**: Displays temperature, conditions, and other key metrics
+- **5-Day Forecast**: Shows upcoming weather trends at a glance
+- **Custom Location Search**: Get weather for any city worldwide
+- **Responsive Design**: Works on desktop and mobile devices
 
-### Create a file .env. This is where you will put your API key, inside of it put
-`API_KEY = "Your API key"`<br/>
-`IPINFO_TOKEN = "Your IP info token"`
+## Quick Start
 
+### Prerequisites
 
-### To run the project, open the weather_app, and type<br/>
-`cd weather_app`<br/>
-`python3 main.py`
+Before getting started, you'll need API keys from:
+1. [OpenWeatherMap](http://api.openweathermap.org) - For weather data
+2. [IPInfo](https://ipinfo.io) - For IP-based location detection
 
-### To run the tests, type<br/>
-`pytest`
+### Installation
 
-https://weather-app-nine-sigma-76.vercel.app/
+#### macOS / Linux
+
+```bash
+# Clone the repository
+git clone https://github.com/egorgusev1/Weather_API.git
+
+# Navigate to the project directory
+cd Weather_App
+
+# Install dependencies
+chmod +x install_requirements.sh
+./install_requirements.sh
+
+# Create .env file with your API keys
+echo "API_KEY = \"Your OpenWeatherMap API key\"" > .env
+echo "IPINFO_TOKEN = \"Your IPInfo token\"" >> .env
+```
+
+#### Windows
+
+```powershell
+# Clone the repository
+git clone https://github.com/egorgusev1/Weather_API.git
+
+# Navigate to the project directory
+cd Weather_App
+
+# For Windows, manually install the requirements
+pip install -r requirements.txt
+
+# Create .env file with your API keys
+# Either create this file manually or use these commands:
+echo API_KEY = "Your OpenWeatherMap API key" > .env
+echo IPINFO_TOKEN = "Your IPInfo token" >> .env
+```
+
+### Running the Application
+
+#### macOS / Linux
+
+```bash
+# Navigate to the weather_app directory
+cd weather_app
+
+# Start the application
+python3 main.py
+```
+
+#### Windows
+
+```powershell
+# Navigate to the weather_app directory
+cd weather_app
+
+# Start the application
+# Use python or py depending on your installation
+python main.py
+# OR
+py main.py
+```
+
+The application will be available at `http://localhost:5000`
+
+### Running Tests
+
+#### macOS / Linux
+
+```bash
+pytest
+```
+
+#### Windows
+
+```powershell
+python -m pytest
+# OR
+py -m pytest
+```
+
+## API Endpoints
+
+The application provides the following endpoints:
+
+- **`GET /`**: Main page that displays the weather interface
+  - Automatically detects user location on initial load
+  - Accepts POST requests with a city name for manual searches
+
+- **`GET /api/weather`**: JSON API endpoint for programmatic access
+  - Query parameters:
+    - `city` (optional): City name to get weather for
+  - Returns weather data in JSON format including current conditions and forecast
+  - Uses IP-based location detection if no city is specified
+
+## Technologies
+
+- Flask web framework
+- OpenWeatherMap API
+- IPInfo geolocation services
+- Responsive front-end design
 
 ## Contributors
-* Mohamed Amara
-* Mykola Demianiuk
-* Egor Gusev
 
+- Mohamed Amara
+- Mykola Demianiuk
+- Egor Gusev

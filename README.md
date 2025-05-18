@@ -34,6 +34,6 @@ https://weather-app-nine-sigma-76.vercel.app/
 
 ## Contributors
 * Mohamed Amara
-* Mykola Dem
+* Mykola Demianiuk
 * Egor Gusev
 

@@ -160,3 +160,5 @@ The application provides the following endpoints:
 - [Mohamed Amara](https://github.com/Shaku-Med)
 - [Mykola Demianiuk](https://github.com/Demianiuk-Mykola)
 - [Egor Gusev](https://github.com/egorgusev1)
+
+<!-- Pull request. -->

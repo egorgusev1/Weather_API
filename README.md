@@ -1,15 +1,16 @@
 # Weather App
 
-<picture>
- <source media="(prefers-color-scheme: dark)" srcset="/images/weather_app.png">
- <source media="(prefers-color-scheme: light)" srcset="/images/weather_app.png">
- <img alt="YOUR-ALT-TEXT" src="/images/weather_app.png">
-</picture>
-
+![Weather App Screenshot](/images/weather_app.png)
 
 ## [Live Demo](https://weather-app-nine-sigma-76.vercel.app/)
 
 A modern weather application that automatically detects user location and provides real-time weather updates and forecasts.
+
+## ⚠️ Important Note
+
+**You must place the `.env` file inside the `weather_app` directory, not in the root directory.**
+
+This is critical for the application to function properly, as it looks for environment variables in the `weather_app` folder.
 
 ## Features
 
@@ -27,6 +28,25 @@ Before getting started, you'll need API keys from:
 1. [OpenWeatherMap](http://api.openweathermap.org) - For weather data
 2. [IPInfo](https://ipinfo.io) - For IP-based location detection
 
+## Project Structure
+
+```
+Weather_API/
+├── __pycache__/
+├── images/
+├── venv/
+├── weather_app/           # Main application directory
+│   ├── __pycache__/
+│   ├── templates/         # HTML templates
+│   ├── main.py            # Application entry point
+│   ├── .env               # Place your API keys here! 
+│   └── ...
+├── install_requirements.sh
+├── README.md
+├── requirements.txt
+└── vercel.json
+```
+
 ### Installation
 
 #### macOS / Linux
@@ -43,8 +63,11 @@ chmod +x install_requirements.sh
 ./install_requirements.sh
 
 # Create .env file with your API keys
+# IMPORTANT: Create this file inside the weather_app directory
+cd weather_app
 echo "API_KEY = \"Your OpenWeatherMap API key\"" > .env
 echo "IPINFO_TOKEN = \"Your IPInfo token\"" >> .env
+cd ..
 ```
 
 #### Windows
@@ -60,9 +83,12 @@ cd Weather_App
 pip install -r requirements.txt
 
 # Create .env file with your API keys
+# IMPORTANT: Create this file inside the weather_app directory
+cd weather_app
 # Either create this file manually or use these commands:
 echo API_KEY = "Your OpenWeatherMap API key" > .env
 echo IPINFO_TOKEN = "Your IPInfo token" >> .env
+cd ..
 ```
 
 ### Running the Application

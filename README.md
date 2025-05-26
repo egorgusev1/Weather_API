@@ -95,6 +95,7 @@ cd ..
 
 #### macOS / Linux
 
+<!-- For further Unix/Mac OS instructions additioanl documentation might be required -->
 ```bash
 # Navigate to the weather_app directory
 cd weather_app
